@@ -1,0 +1,5 @@
+<div>
+    <input [(ngModel)]="newTodo" />
+    <button (click)="createTodo()">Add Todo</button>
+    <todo *ngFor="let todo of data$; index as i;" [title]="todo.title" dateTime="{{ todo.dateTime }}"></todo>
+</div>
